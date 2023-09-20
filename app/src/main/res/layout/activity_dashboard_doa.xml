@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardDoaActivity">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="450dp"
+        android:layout_height="360dp"
+        app:srcCompat="@drawable/img"
+        />
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doa dan \n Dzikir \n App"
+        android:layout_marginStart="35dp"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_doa"
+        android:layout_toRightOf="@+id/tvJudul"
+        android:layout_marginTop="-100dp"
+        />
+    <TextView
+        android:id="@+id/pilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilihan Doa dan \n Dzikir"
+        android:layout_below="@+id/gambar"
+        android:textColor="#FFA103"
+        android:textSize="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-30dp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/btnSelengkapnya"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Selengkapnya ->"
+        android:clickable="true"
+        android:layout_toRightOf="@+id/pilih"
+        android:layout_marginTop="340dp"
+        android:layout_marginStart="19dp"
+        android:backgroundTint="#676262"
+        />
+
+    <ScrollView
+        android:id="@+id/sv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBahasaPemrograman"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </ScrollView>
+
+</RelativeLayout>
